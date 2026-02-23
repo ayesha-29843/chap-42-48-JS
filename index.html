@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Click the link below:</h2>
+    <a href="#" onclick="showAlert()">Click me for an alert</a>
+    
+    <!---------------------------------------------------------------------------->
+    
+
+        <h1>Mobile Gallery</h1>
+    <p>Click on an image to show its name</p>
+
+    <div class="gallery-container">
+        <img src=".img/images.jpg" 
+             alt="Mobile 1" class="gallery-item" onclick="showAlert('iPhone X')">
+        
+        <img src=".img/mobiluri-teleponi-infinix-smart-9-4gb-128gb-dual-sim-lte-nfc-black-1-11.jpg" 
+             alt="Mobile 2" class="gallery-item" onclick="showAlert('Samsung S21')">
+        
+        <img src=".img/Qkm5Uyoa.webp" 
+             alt="Mobile 3" class="gallery-item" onclick="showAlert('Pixel 5')">
+    </div>
+
+<!------------------------------------------------------------------------------------------------------->
+
+    <h2>Student Records Table</h2>
+
+<table id="studentTable">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Grade</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td><td>Ayesha</td><td>A</td><td><button onclick="deleteRow(this)">Delete</button></td></tr>
+        <tr><td>2</td><td>Jannat</td><td>B</td><td><button onclick="deleteRow(this)">Delete</button></td></tr>
+        <tr><td>3</td><td>Abubaqar</td><td>A</td><td><button onclick="deleteRow(this)">Delete</button></td></tr>
+        <tr><td>4</td><td>Danial</td><td>C</td><td><button onclick="deleteRow(this)">Delete</button></td></tr>
+        <tr><td>5</td><td>Esha</td><td>B</td><td><button onclick="deleteRow(this)">Delete</button></td></tr>
+        <tr><td>6</td><td>Farhan</td><td>A</td><td><button onclick="deleteRow(this)">Delete</button></td></tr>
+        <tr><td>7</td><td>Sakib</td><td>B</td><td><button onclick="deleteRow(this)">Delete</button></td></tr>
+        <tr><td>8</td><td>Haniya</td><td>C</td><td><button onclick="deleteRow(this)">Delete</button></td></tr>
+        <tr><td>9</td><td>Iqra</td><td>A</td><td><button onclick="deleteRow(this)">Delete</button></td></tr>
+        <tr><td>10</td><td>Junaid</td><td>B</td><td><button onclick="deleteRow(this)">Delete</button></td></tr>
+    </tbody>
+</table>
+
+
+<!--------------------------------------------------------------------------------------------->
+
+
+<img
+  id="myImage"
+  src=".img/mobile 1.webp"
+  onmouseover="this.src='.img/Qkm5Uyoa.webp'"
+  onmouseout="this.src='.img/mobile 1.webp'"
+  alt="Hover over the image"
+  width="200"
+  height="300">
+
+  <!--------------------------------------------------->
+  
+<script src="app.js"></script>
+</body>
+</html>
